@@ -1,0 +1,10 @@
+sc.exe create MongoDB binPath= "\"D:\mongodb\bin\mongod.exe\" --service --config=\"D:\mongodb\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+
+//
+use admin
+db.metadataMongo
+db.addUser("gstone","gstone")
+db.auth("gstone","gstone")  //设置用户为允许连接的用户
+db.createCollection("Attribute")
+db.createCollection("Entity")
+db.createCollection("Value")

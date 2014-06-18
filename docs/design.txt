@@ -1,0 +1,4 @@
+group:com.chlol.gstone
+
+gstone-metadata
+gstone-
