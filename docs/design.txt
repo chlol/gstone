@@ -4,4 +4,4 @@ gstone-metadata
 gstone-metadata-service:nodejs+monk+mongo
 gstone-
 
-nodejs express handlebarsjs grunt
+nodejs express handlebarsjs grunt Expresso
