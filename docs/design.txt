@@ -1,7 +1,7 @@
 group:com.chlol.gstone
 
 gstone-metadata
-gstone-metadata-service:nodejs+monk+mongo
+gstone-metadata-service:nodejs+monk+mongo node-mongodb-native
 gstone-
 
 nodejs express handlebarsjs grunt Expresso
