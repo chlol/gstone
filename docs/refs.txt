@@ -1,1 +1,3 @@
 https://github.com/JedWatson/keystone
+
+https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo
