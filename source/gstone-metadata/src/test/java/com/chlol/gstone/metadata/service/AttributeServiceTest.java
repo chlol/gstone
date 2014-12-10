@@ -18,10 +18,11 @@ public class AttributeServiceTest extends BaseTest {
 	@Test
 	public void testAddAttribute() {
 		a = new Attribute();
-		a.setName("name");
-		a.setLabel("名称");
+		a.setName("attribute");
+		a.setLabel("属性");
 		a.setType("string");
 		a.setLength(128);
+		a.setVersion(1);
 
 		as.save(a);
 		Attribute get = as.getByName(a.getName(),Attribute.class);

@@ -24,18 +24,21 @@ public class EntityServiceTest extends BaseTest {
 		user = new Entity();
 		user.setName("user");
 		user.setLabel("用户信息");
+		user.setVersion(1);
 		
 		Attribute name = new Attribute();
 		name.setName("name");
 		name.setLabel("姓名");
 		name.setType("String");
 		name.setLength(64);
+		name.setVersion(1);
 		user.addAttribute(name);
 		
 		Attribute old = new Attribute();
 		old.setName("old");
 		old.setLabel("年龄");
 		old.setType("int");
+		old.setVersion(1);
 		user.addAttribute(old);
 		
 		es.save(user);

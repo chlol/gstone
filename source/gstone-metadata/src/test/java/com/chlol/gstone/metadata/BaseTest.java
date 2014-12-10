@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -19,6 +20,7 @@ import de.flapdoodle.embed.process.runtime.Network;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath*:config/spring/**/*.xml" })
+@DirtiesContext
 public abstract class BaseTest {
 	private static MongodProcess mongoProcess;
 	

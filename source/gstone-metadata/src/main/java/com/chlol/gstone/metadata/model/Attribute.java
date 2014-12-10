@@ -1,6 +1,6 @@
 package com.chlol.gstone.metadata.model;
 
-public class Attribute extends BaseModel {
+public class Attribute extends CommonModel {
 	private static final long serialVersionUID = -5663950447349720274L;
 	
 	private String type;
