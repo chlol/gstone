@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -22,9 +21,8 @@ import de.flapdoodle.embed.process.runtime.Network;
 @ContextConfiguration(locations = { "classpath*:config/spring/**/*.xml" })
 public abstract class BaseTest {
 	private static MongodProcess mongoProcess;
-    
-	@Value("mongo.port")
-    private static int mongoPort;
+	
+    private static int mongoPort = 27017;
     
 	@BeforeClass
 	public static void initializeDB() throws IOException {

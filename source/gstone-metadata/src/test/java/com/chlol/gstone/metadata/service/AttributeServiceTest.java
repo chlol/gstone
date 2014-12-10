@@ -24,7 +24,7 @@ public class AttributeServiceTest extends BaseTest {
 		a.setLength(128);
 
 		as.save(a);
-		Attribute get = as.get(a.getName(), Attribute.class);
+		Attribute get = as.getAttributeByName(a.getName());
 		assertEquals(a.getLabel(), get.getLabel());
 	}
 

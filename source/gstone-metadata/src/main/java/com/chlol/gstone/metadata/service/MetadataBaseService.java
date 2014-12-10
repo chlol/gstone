@@ -11,11 +11,7 @@ public abstract class MetadataBaseService<M extends Serializable> {
 	
 	public void save(M model) {
 		mongoTemplate.save(model);
-	}
-	
-	public M get(Serializable id, Class<M> modelClass) {
-		return mongoTemplate.findById(id,modelClass);
-	}
+	}	
 	
 	public void remove(M model) {
 		mongoTemplate.remove(model);
