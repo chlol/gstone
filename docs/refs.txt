@@ -3,3 +3,4 @@ https://github.com/JedWatson/keystone
 https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo
 
 http://jquery-ui-bootstrap.github.io/jquery-ui-bootstrap/
+http://emberjs.com/guides/
