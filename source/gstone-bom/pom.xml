@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.chlol.gstone</groupId>
+	<artifactId>gstone-bom</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>gstone-bom</name>
+
+	<parent>
+		<groupId>io.spring.platform</groupId>
+		<artifactId>platform-bom</artifactId>
+		<version>2.0.0.RELEASE</version>
+		<relativePath />
+	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${mybatis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis-spring</artifactId>
+				<version>${mybatis.spring.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<properties>
+		<!-- for common -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- for log -->
+		<slf4j.version>1.7.9</slf4j.version>
+
+		<!-- for mybatis -->
+		<mybatis.version>3.3.0</mybatis.version>
+		<mybatis.spring.version>1.2.3</mybatis.spring.version>
+
+		<!-- for test -->
+		<junit.version>4.12</junit.version>
+	</properties>
+</project>

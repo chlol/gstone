@@ -5,3 +5,31 @@ gstone-metadata-service:nodejs+monk+mongo node-mongodb-native
 gstone-
 
 nodejs express handlebarsjs grunt Expresso
+
+gstone应用框架：（以spring为基础）
+服务端：java应用开发环境模块 －－》基础模块－－》业务应用模块
+  dao：在任何spring环境即得即用
+    com.chlol.gstone.dao (pom定义依赖的版本)
+    com.chlol.gstone.dao.common （dao公共类、dao接口类）
+    以下配置文件目录唯一约定（通用spring为：config／spring）：
+    com.chlol.gstone.dao.mybatis   （config／mybatis）
+    com.chlol.gstone.dao.hibernate （config／hibernate）
+    com.chlol.gstone.dao.jpa	   （config／jpa）
+
+  service：在任何spring环境即得即用
+    com.chlol.gstone.service
+    com.chlol.gstone.service.auth
+    com.chlol.gstone.service.menu
+web端：环境模块 －－》基础模块－－》业务应用模块
+  java ee web基础环境 －－》各web端应用组件（primefaces、vaddin、springmvc等）
+  纯js web基础环境 －－》各js应用组件（primeui、jqueryui等）
+  －－》通用用户组件（用户登录注销、菜单管理、权限管理）
+
+gstone－generator
+  代码生成工具：原数据＋模板 －－》代码，提供eclipse工具插件，可视化设计
+
+gstone组件市场
+gstone培训平台
+gstone外包平台
+  	
+移动端：环境模块 －－》基础模块－－》业务应用模块
