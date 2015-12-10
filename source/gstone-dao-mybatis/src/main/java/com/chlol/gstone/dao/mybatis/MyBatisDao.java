@@ -1,7 +1,6 @@
 package com.chlol.gstone.dao.mybatis;
 
 import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -20,11 +19,8 @@ public class MyBatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
 
 	Class<T> tClass;
 
-	@SuppressWarnings("unchecked")
 	public MyBatisDao() {
 		super();
-		ParameterizedType pt = (ParameterizedType) this.getClass().getGenericSuperclass();
-		tClass = (Class<T>) pt.getActualTypeArguments()[0];
 	}
 
 	public MyBatisDao(Class<T> tClass) {
@@ -63,7 +59,8 @@ public class MyBatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
 
 	@Override
 	public T save(T object) {
-		getSqlSession().insert(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_INSERT, object);
+		getSqlSession().insert(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_INSERT,
+				object);
 		return null;
 	}
 
@@ -76,7 +73,8 @@ public class MyBatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
 
 	@Override
 	public T update(T object) {
-		getSqlSession().update(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_UPDATE, object);
+		getSqlSession().update(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_UPDATE,
+				object);
 		return null;
 	}
 
@@ -89,7 +87,8 @@ public class MyBatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
 
 	@Override
 	public void remove(T object) {
-		getSqlSession().delete(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_REMOVE, object);
+		getSqlSession().delete(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_REMOVE,
+				object);
 	}
 
 	@Override
@@ -101,7 +100,8 @@ public class MyBatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
 
 	@Override
 	public void remove(Serializable id) {
-		getSqlSession().delete(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_REMOVE, id);
+		getSqlSession().delete(tClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_REMOVE,
+				id);
 	}
 
 	@Override
