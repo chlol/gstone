@@ -14,7 +14,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext-resources.xml")
+@ContextConfiguration(locations = { "classpath*:config/spring/**/*.xml" })
 public class DataSourceTest {
 
     private static final String TEST_QUERY = "SELECT * FROM test_table1";

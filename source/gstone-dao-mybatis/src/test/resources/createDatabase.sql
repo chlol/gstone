@@ -1,5 +1,6 @@
 CREATE DATABASE IF NOT EXISTS gstone;
 USE gstone;
+drop table if exists test_table1;
 create table test_table1 (
     id varchar(32) not null,
     name varchar(150) null,

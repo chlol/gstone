@@ -20,7 +20,7 @@
 	</bean>
 
 	<!-- embedded mysql datasource -->
-	<bean id="dataSource" class="com.devveri.jdbc.datasource.EmbeddedMysqlDataSource"
+	<bean id="dataSource" class="com.chlol.gstone.dao.test.EmbeddedMysqlDataSource"
 		init-method="init" destroy-method="shutdown">
 		<property name="url" value="${jdbc.url}" />
 		<property name="driverClassName" value="${jdbc.driverClassName}" />

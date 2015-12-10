@@ -3,13 +3,4 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="one">
 	
-	<select id="getSaleInfosByGoodName" parameterType="java.lang.String" resultType="com.hylandtec.hystone.common.model.SaleInfo">
-	    SELECT
-	      SI.GOOD_NAME as goodName,
-	      SI.GOOD_ID as goodId,
-	      SI.GOOD_DATE as goodDate
-	    FROM HS_COMMON_SALEINFO as SI
-	    WHERE SI.GOOD_NAME = #{goodName}
-	</select>
-	
 </mapper>
