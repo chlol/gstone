@@ -1,4 +1,4 @@
-package com.chlol.gstone.dao.test;
+package com.chlol.gstone.dao.common.datasource;
 
 import com.mysql.management.driverlaunched.ServerLauncherSocketFactory;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;

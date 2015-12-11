@@ -1,4 +1,4 @@
-package com.chlol.gstone.dao.test;
+package com.chlol.gstone.dao.mybatis.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
