@@ -8,20 +8,10 @@ public interface GenericDao<T, PK extends Serializable> {
 	 * Generic method used to get all objects of a particular type. This is the
 	 * same as lookup up all rows in a table.
 	 * 
+	 * @param objectClass
 	 * @return List of populated objects
 	 */
-	List<T> getAll();
-
-	/**
-	 * Generic method to get an object based on class and identifier. An
-	 * ObjectRetrievalFailureException Runtime Exception is thrown if nothing is
-	 * found.
-	 *
-	 * @param id
-	 *            the identifier (primary key) of the object to get
-	 * @return a populated object
-	 */
-	T get(PK id);
+	List<T> getAll(Class<T> objectClass);
 
 	/**
 	 * Generic method to get an object based on class and identifier. An
@@ -37,11 +27,12 @@ public interface GenericDao<T, PK extends Serializable> {
 	/**
 	 * Checks for existence of an object of type T using the id arg.
 	 * 
+	 * @param objectClass
 	 * @param id
 	 *            the id of the entity
 	 * @return - true if it exists, false if it doesn't
 	 */
-	boolean exists(PK id);
+	boolean exists(Class<T> objectClass, PK id);
 
 	/**
 	 * Generic method to save an object
@@ -93,16 +84,17 @@ public interface GenericDao<T, PK extends Serializable> {
 	/**
 	 * Generic method to delete an object
 	 * 
+	 * @param objectClass
 	 * @param id
 	 *            the identifier (primary key) of the object to remove
 	 */
-	void remove(PK id);
+	void remove(Class<T> objectClass, PK id);
 
 	/**
 	 * remove one or more objects by pk
 	 * 
 	 * @param pks
 	 */
-	void removeBatchByPK(List<PK> pks);
+	void removeBatchByPK(Class<T> objectClass, List<PK> pks);
 
 }
