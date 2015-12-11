@@ -20,7 +20,7 @@ public final class MybatisConstants {
 	public final static String EXECUTE_TYPE_KEY = "EXECUTE_TYPE";
 	public final static String EXECUTE_TYPE_INSERT = "insert";
 	public final static String EXECUTE_TYPE_UPDATE = "update";
-	public final static String EXECUTE_TYPE_REMOVE = "remove";
+	public final static String EXECUTE_TYPE_DELETE = "delete";
 	public final static String EXECUTE_TYPE_GET = "get";
 	public final static String EXECUTE_TYPE_GET_ALL = "getAll";
 	public final static String EXECUTE_TYPE_SEARCH_ALL = "searchAll";

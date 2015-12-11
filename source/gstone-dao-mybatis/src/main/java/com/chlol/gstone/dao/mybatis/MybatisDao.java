@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import com.chlol.gstone.dao.common.GenericDao;
+import com.chlol.gstone.dao.common.GenericModel;
 import com.chlol.gstone.dao.common.impl.StringIdModel;
 
 @Repository
@@ -78,11 +79,16 @@ public class MybatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
         }
     }
 
-    @Override
+    @SuppressWarnings("rawtypes")
+	@Override
     public void remove(T object) {
+    	Serializable parameter = null;
+    	if (object instanceof GenericModel) {
+    		parameter = ((GenericModel) object).getId();
+		}
         getSqlSession().delete(
-                object.getClass().getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_REMOVE,
-                object);
+                object.getClass().getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_DELETE,
+                parameter);
     }
 
     @Override
@@ -95,7 +101,7 @@ public class MybatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
     @Override
     public void remove(Class<T> modelClass,Serializable id) {
         getSqlSession().delete(
-                modelClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_REMOVE, id);
+                modelClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_DELETE, id);
     }
 
     @Override
