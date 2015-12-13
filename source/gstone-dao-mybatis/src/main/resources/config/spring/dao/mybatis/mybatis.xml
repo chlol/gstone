@@ -21,7 +21,7 @@
 
 	<bean id="diclectStatementHandlerInterceptor"
 		class="com.chlol.gstone.dao.mybatis.dialect.DiclectStatementHandlerInterceptor">
-		<property name="dialect" ref="mysqlDialect" />
+		<property name="dialect" ref="${jdbc.mybatis.dialect}" />
 	</bean>
 
 	<bean id="db2Dialect"
