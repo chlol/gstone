@@ -27,20 +27,20 @@ public class MybatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
     }
 
     @Override
-    public List<T> getAll(Class<T> modelClass) {
+    public List<T> getAll(Class<T> objectClass) {
         return getSqlSession().selectList(
-                modelClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_GET_ALL);
+        		objectClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_GET_ALL);
     }
 
     @Override
-    public T get(Class<T> modelClass, Serializable id) {
+    public T get(Class<T> objectClass, Serializable id) {
         return getSqlSession()
-                .selectOne(modelClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_GET, id);
+                .selectOne(objectClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_GET, id);
     }
 
     @Override
-    public boolean exists(Class<T> modelClass,Serializable id) {
-        T t = get(modelClass,id);
+    public boolean exists(Class<T> objectClass,Serializable id) {
+        T t = get(objectClass,id);
         return t == null ? false : true;
     }
 
@@ -54,7 +54,7 @@ public class MybatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
         getSqlSession().insert(
                 object.getClass().getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_INSERT,
                 object);
-        return null;
+        return object;
     }
 
     @Override
@@ -99,15 +99,15 @@ public class MybatisDao<T> extends SqlSessionDaoSupport implements GenericDao<T,
     }
 
     @Override
-    public void remove(Class<T> modelClass,Serializable id) {
+    public void remove(Class<T> objectClass,Serializable id) {
         getSqlSession().delete(
-                modelClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_DELETE, id);
+        		objectClass.getName() + MybatisConstants.SYMBOL_DOT + MybatisConstants.EXECUTE_TYPE_DELETE, id);
     }
 
     @Override
-    public void removeBatchByPK(Class<T> modelClass,List<Serializable> pks) {
+    public void removeBatchByPK(Class<T> objectClass,List<Serializable> pks) {
         for (Serializable pk : pks) {
-            this.remove(modelClass,pk);
+            this.remove(objectClass,pk);
         }
     }
 }

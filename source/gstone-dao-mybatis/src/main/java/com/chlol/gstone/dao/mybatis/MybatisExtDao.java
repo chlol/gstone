@@ -42,4 +42,20 @@ public class MybatisExtDao extends SqlSessionDaoSupport {
 		result[1] = MyBatisUtils.getTotalCount(getSqlSession(), statementId, parameter);
 		return result;
 	}
+	
+	public Object searchOne(final String statementId,final Object parameter) {
+		return getSqlSession().selectOne(statementId, parameter);
+	}
+	
+	public Object update(final String statementId,final Object parameter) {
+		return getSqlSession().update(statementId, parameter);
+	}
+	
+	public Object delete(final String statementId,final Object parameter) {
+		return getSqlSession().delete(statementId, parameter);
+	}
+	
+	public Object insert(final String statementId,final Object parameter) {
+		return getSqlSession().insert(statementId, parameter);
+	}
 }
