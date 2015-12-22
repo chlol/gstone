@@ -63,9 +63,6 @@ public class GStoneAuthorizingRealm extends AuthorizingRealm {
 		String username = userProfileToken.getUserProfile().getLoginName();
 		String password = userProfileToken.getUserProfile().getPassword();
 		this.token = token;
-		if (password == null) {
-			throw new AuthenticationException("");
-		}
 		UserProfile userProfile = getUserProfileManager().checkUser(username,
 				password);
 		userProfileToken.setUserProfile(userProfile);

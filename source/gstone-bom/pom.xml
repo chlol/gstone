@@ -18,6 +18,12 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<scope>provided</scope>
+				<version>${javaee.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>${slf4j.version}</version>
@@ -54,7 +60,7 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-mxj</artifactId>
@@ -86,6 +92,7 @@
 	</dependencyManagement>
 
 	<properties>
+		<javaee.version>7.0</javaee.version>
 		<!-- for common -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
