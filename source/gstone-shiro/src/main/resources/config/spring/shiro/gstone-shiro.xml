@@ -14,7 +14,7 @@
 				/login.html = anon
 				/* = authc
 				* = authc
-				/pages/**/*.html = authc
+				/pages/**/*.jsp = authc
 			</value>
 		</property>
 	</bean>
