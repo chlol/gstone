@@ -24,6 +24,11 @@
 				<version>${javaee.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+				<version>${jstl.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>${slf4j.version}</version>
@@ -93,6 +98,7 @@
 
 	<properties>
 		<javaee.version>7.0</javaee.version>
+		<jstl.version>1.2</jstl.version>
 		<!-- for common -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 

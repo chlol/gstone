@@ -5,7 +5,19 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
-	<bean id="formAuth"
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="unauthorizedUrl" value="/unauthorized.html" />
+		<property name="loginUrl" value="/login.html" />
+		<property name="filterChainDefinitions">
+			<value>
+				/login.html = anon
+				/unauthorized.html = anon
+				/** = authc
+			</value>
+		</property>
+	</bean>
+	<bean id="authc"
 		class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter" />
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<property name="realm" ref="myRealm" />
