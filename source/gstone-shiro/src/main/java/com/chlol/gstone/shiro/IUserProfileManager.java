@@ -44,7 +44,7 @@ public interface IUserProfileManager {
 	void changePosition(UserProfile userProfile, String posId);
 	
 	/**
-	 * 获取用户登录信息
+	 * 获取用户的权限信息
 	 * @param loginId 用户登录ID
 	 * @return
 	 */
