@@ -12,7 +12,7 @@ import com.chlol.gstone.dao.mybatis.model.TestTable1Model;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath*:config/spring/**/*.xml" })
-public class MybatisTest {
+public class MybatisDaoTest {
 	@Autowired
 	private MybatisDao<TestTable1Model> dao;
 	

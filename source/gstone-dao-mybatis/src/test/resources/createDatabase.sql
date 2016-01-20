@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS gstone;
-USE gstone;
+CREATE DATABASE IF NOT EXISTS gstone_mybatis;
+USE gstone_mybatis;
 drop table if exists test_table1;
 create table test_table1 (
     id varchar(32) not null,

@@ -9,10 +9,12 @@ import javax.persistence.PersistenceContext;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 
 import com.chlol.gstone.dao.common.GenericDao;
 import com.chlol.gstone.dao.common.impl.StringIdModel;
 
+@Repository
 public class JpaDao<T> implements GenericDao<T, Serializable> {
 	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 	public static final String PERSISTENCE_UNIT_NAME = "ApplicationEntityManager";
