@@ -18,6 +18,7 @@ import com.chlol.gstone.dao.common.impl.StringIdModel;
 public class JpaDao<T> implements GenericDao<T, Serializable> {
 	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 	public static final String PERSISTENCE_UNIT_NAME = "ApplicationEntityManager";
+	
 	@PersistenceContext(unitName=PERSISTENCE_UNIT_NAME)
     private EntityManager entityManager;
 	
