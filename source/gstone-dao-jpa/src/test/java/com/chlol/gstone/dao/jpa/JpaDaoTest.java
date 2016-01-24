@@ -1,5 +1,7 @@
 package com.chlol.gstone.dao.jpa;
 
+import javax.transaction.Transactional;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,7 @@ public class JpaDaoTest {
 	private JpaDao<UserModel> dao;
 
 	@Test
+	@Transactional
 	public void testSave() {
 		UserModel model = new UserModel();
 		model.setName("henry");
