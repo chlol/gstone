@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*" isolation="DEFAULT" propagation="SUPPORTS"
+				read-only="true" />
+			<tx:method name="search*" isolation="DEFAULT" propagation="SUPPORTS"
+				read-only="true" />
+			
+			<tx:method name="add*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="save*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="update*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="delete*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="remove*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="release*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="copy*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />	
+			<tx:method name="upgrade*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />
+			<tx:method name="modify*" isolation="DEFAULT" read-only="false"
+				propagation="REQUIRED" />					
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="serviceOperation" expression="execution(* com..*Service.*(..))" />
+		<aop:advisor pointcut-ref="serviceOperation" advice-ref="transactionAdvice" />
+	</aop:config>
+
+</beans>

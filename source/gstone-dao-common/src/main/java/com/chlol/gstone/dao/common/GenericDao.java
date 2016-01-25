@@ -2,6 +2,7 @@ package com.chlol.gstone.dao.common;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 public interface GenericDao<T, PK extends Serializable> {
 	/**
@@ -96,5 +97,49 @@ public interface GenericDao<T, PK extends Serializable> {
 	 * @param pks
 	 */
 	void removeBatchByPK(Class<T> objectClass, List<PK> pks);
+	
+	/**
+	 * search by query statement
+	 * @param identifier the query statement identifier
+	 * @return
+	 */
+	public List<T> search(String identifier);
+	
+	/**
+	 * search by query statement
+	 * @param identifier
+	 * @param parameter
+	 * @return
+	 */
+	public List<T> search(String identifier, Object parameter);
+	
+	/**
+	 * search by query statement for pagging
+	 * @param identifier the query statement identifier
+	 * @param offset 
+	 * @param size
+	 * @return
+	 */
+	public PageResult<T> search(String identifier, int offset, int size);
+	
+	/**
+	 * search by query statement for pagging
+	 * @param identifier the query statement identifier
+	 * @param parameter
+	 * @param offset
+	 * @param size
+	 * @return
+	 */
+	public PageResult<T> search(String identifier, Object parameter, int offset, int size);
+	
+	/**
+	 * search by query statement for pagging
+	 * @param identifier the query statement identifier
+	 * @param parameters
+	 * @param offset
+	 * @param size
+	 * @return
+	 */
+	public PageResult<T> search(String identifier, Map<String, Object> parameters, int offset, int size);
 
 }
