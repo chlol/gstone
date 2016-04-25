@@ -10,7 +10,7 @@
         <!-- <Logger name="org.apache" level="debug"/>
         <Logger name="org.compass" level="warn"/>
         <Logger name="org.springframework" level="debug"/>
-        <Logger name="com.chlol" level="debug"/> -->
+        <Logger name="com.lnngle" level="debug"/> -->
 
         <Root level="error">
             <AppenderRef ref="Console"/>

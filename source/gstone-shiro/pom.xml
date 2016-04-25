@@ -6,7 +6,7 @@
 	<name>gstone-shiro</name>
 
 	<parent>
-		<groupId>com.chlol.gstone</groupId>
+		<groupId>com.lnngle.gstone</groupId>
 		<artifactId>gstone-bom</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath />

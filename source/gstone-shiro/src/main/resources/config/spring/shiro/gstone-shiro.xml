@@ -11,5 +11,5 @@
 		<property name="realm" ref="myRealm" />
 	</bean>
 	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
-	<bean id="myRealm" class="com.chlol.gstone.shiro.GStoneAuthorizingRealm" />
+	<bean id="myRealm" class="com.lnngle.gstone.shiro.GStoneAuthorizingRealm" />
 </beans>

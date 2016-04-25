@@ -7,7 +7,7 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.chlol.gstone.dao.mybatis" />
+	<context:component-scan base-package="com.lnngle.gstone.dao.mybatis" />
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -22,18 +22,18 @@
 	</bean>
 
 	<bean id="diclectStatementHandlerInterceptor"
-		class="com.chlol.gstone.dao.mybatis.dialect.DiclectStatementHandlerInterceptor">
+		class="com.lnngle.gstone.dao.mybatis.dialect.DiclectStatementHandlerInterceptor">
 		<property name="dialect" ref="${jdbc.mybatis.dialect}" />
 	</bean>
 
-	<bean id="db2Dialect" class="com.chlol.gstone.dao.mybatis.dialect.impl.DB2Dialect"></bean>
+	<bean id="db2Dialect" class="com.lnngle.gstone.dao.mybatis.dialect.impl.DB2Dialect"></bean>
 	<bean id="informixDialect"
-		class="com.chlol.gstone.dao.mybatis.dialect.impl.InformixDialect"></bean>
-	<bean id="mysqlDialect" class="com.chlol.gstone.dao.mybatis.dialect.impl.MySQLDialect"></bean>
-	<bean id="oracleDialect" class="com.chlol.gstone.dao.mybatis.dialect.impl.OracleDialect"></bean>
+		class="com.lnngle.gstone.dao.mybatis.dialect.impl.InformixDialect"></bean>
+	<bean id="mysqlDialect" class="com.lnngle.gstone.dao.mybatis.dialect.impl.MySQLDialect"></bean>
+	<bean id="oracleDialect" class="com.lnngle.gstone.dao.mybatis.dialect.impl.OracleDialect"></bean>
 	<bean id="sqlServer2005Dialect"
-		class="com.chlol.gstone.dao.mybatis.dialect.impl.SQLServer2005Dialect"></bean>
+		class="com.lnngle.gstone.dao.mybatis.dialect.impl.SQLServer2005Dialect"></bean>
 	<bean id="sqlServerDialect"
-		class="com.chlol.gstone.dao.mybatis.dialect.impl.SQLServerDialect"></bean>
-	<bean id="sybaseDialect" class="com.chlol.gstone.dao.mybatis.dialect.impl.SybaseDialect"></bean>
+		class="com.lnngle.gstone.dao.mybatis.dialect.impl.SQLServerDialect"></bean>
+	<bean id="sybaseDialect" class="com.lnngle.gstone.dao.mybatis.dialect.impl.SybaseDialect"></bean>
 </beans>
