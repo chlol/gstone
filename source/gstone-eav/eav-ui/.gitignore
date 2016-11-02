@@ -1,0 +1,8 @@
+target
+src/main/frontend/*.log
+src/main/frontend/dist/* 
+src/main/frontend/node_modules/* 
+src/main/frontend/typings/* 
+src/main/webapp/js/angular2/* 
+src/main/webapp/js/app/* 
+src/main/webapp/js/rxjs/* 

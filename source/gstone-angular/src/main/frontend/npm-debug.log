@@ -1,0 +1,639 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/target/node-installation-dir/node/node',
+1 verbose cli   '/Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/target/node-installation-dir/node/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.13.0
+3 info using node@v0.12.4
+4 verbose readDependencies loading dependencies from /Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/src/main/frontend/package.json
+5 warn package.json gstone-angular@v1.0.0 No repository field.
+6 warn package.json gstone-angular@v1.0.0 No README data
+7 warn package.json gstone-angular@v1.0.0 No license field.
+8 verbose install where, deps [ '/Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/src/main/frontend',
+8 verbose install   [ 'angular2',
+8 verbose install     'systemjs',
+8 verbose install     'es6-promise',
+8 verbose install     'es6-shim',
+8 verbose install     'rxjs',
+8 verbose install     'gulp',
+8 verbose install     'gulp-inline-ng2-template',
+8 verbose install     'gulp-load-plugins',
+8 verbose install     'gulp-rename',
+8 verbose install     'gulp-typescript',
+8 verbose install     'gulp-uglify',
+8 verbose install     'typescript' ] ]
+9 verbose install where, peers [ '/Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/src/main/frontend',
+9 verbose install   [] ]
+10 verbose installManyTop reading for lifecycle /Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/src/main/frontend/package.json
+11 info preinstall gstone-angular@1.0.0
+12 verbose readDependencies loading dependencies from /Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/src/main/frontend/package.json
+13 silly cache add args [ 'angular2@2.0.0-beta.17', null ]
+14 verbose cache add spec angular2@2.0.0-beta.17
+15 silly cache add args [ 'systemjs@0.19.6', null ]
+16 verbose cache add spec systemjs@0.19.6
+17 silly cache add parsed spec { raw: 'angular2@2.0.0-beta.17',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'angular2',
+17 silly cache add   rawSpec: '2.0.0-beta.17',
+17 silly cache add   spec: '2.0.0-beta.17',
+17 silly cache add   type: 'version' }
+18 silly addNamed angular2@2.0.0-beta.17
+19 verbose addNamed "2.0.0-beta.17" is a plain semver version for angular2
+20 silly mapToRegistry name angular2
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/angular2
+24 verbose addNameVersion registry:https://registry.npmjs.org/angular2 not in flight; fetching
+25 silly cache add parsed spec { raw: 'systemjs@0.19.6',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'systemjs',
+25 silly cache add   rawSpec: '0.19.6',
+25 silly cache add   spec: '0.19.6',
+25 silly cache add   type: 'version' }
+26 silly addNamed systemjs@0.19.6
+27 verbose addNamed "0.19.6" is a plain semver version for systemjs
+28 silly mapToRegistry name systemjs
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/systemjs
+32 verbose addNameVersion registry:https://registry.npmjs.org/systemjs not in flight; fetching
+33 silly cache add args [ 'es6-promise@^3.0.2', null ]
+34 verbose cache add spec es6-promise@^3.0.2
+35 silly cache add parsed spec { raw: 'es6-promise@^3.0.2',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'es6-promise',
+35 silly cache add   rawSpec: '^3.0.2',
+35 silly cache add   spec: '>=3.0.2 <4.0.0',
+35 silly cache add   type: 'range' }
+36 silly addNamed es6-promise@>=3.0.2 <4.0.0
+37 verbose addNamed ">=3.0.2 <4.0.0" is a valid semver range for es6-promise
+38 silly addNameRange { name: 'es6-promise', range: '>=3.0.2 <4.0.0', hasData: false }
+39 silly mapToRegistry name es6-promise
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/es6-promise
+43 verbose addNameRange registry:https://registry.npmjs.org/es6-promise not in flight; fetching
+44 silly cache add args [ 'es6-shim@^0.33.3', null ]
+45 verbose cache add spec es6-shim@^0.33.3
+46 silly cache add parsed spec { raw: 'es6-shim@^0.33.3',
+46 silly cache add   scope: null,
+46 silly cache add   name: 'es6-shim',
+46 silly cache add   rawSpec: '^0.33.3',
+46 silly cache add   spec: '>=0.33.3 <0.34.0',
+46 silly cache add   type: 'range' }
+47 silly addNamed es6-shim@>=0.33.3 <0.34.0
+48 verbose addNamed ">=0.33.3 <0.34.0" is a valid semver range for es6-shim
+49 silly addNameRange { name: 'es6-shim', range: '>=0.33.3 <0.34.0', hasData: false }
+50 silly mapToRegistry name es6-shim
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/es6-shim
+54 verbose addNameRange registry:https://registry.npmjs.org/es6-shim not in flight; fetching
+55 silly cache add args [ 'rxjs@5.0.0-beta.0', null ]
+56 verbose cache add spec rxjs@5.0.0-beta.0
+57 silly cache add parsed spec { raw: 'rxjs@5.0.0-beta.0',
+57 silly cache add   scope: null,
+57 silly cache add   name: 'rxjs',
+57 silly cache add   rawSpec: '5.0.0-beta.0',
+57 silly cache add   spec: '5.0.0-beta.0',
+57 silly cache add   type: 'version' }
+58 silly addNamed rxjs@5.0.0-beta.0
+59 verbose addNamed "5.0.0-beta.0" is a plain semver version for rxjs
+60 silly mapToRegistry name rxjs
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry uri https://registry.npmjs.org/rxjs
+64 verbose addNameVersion registry:https://registry.npmjs.org/rxjs not in flight; fetching
+65 silly cache add args [ 'gulp@github:gulpjs/gulp#4.0', null ]
+66 verbose cache add spec gulp@github:gulpjs/gulp#4.0
+67 silly cache add args [ 'gulp-inline-ng2-template@0.0.10', null ]
+68 verbose cache add spec gulp-inline-ng2-template@0.0.10
+69 silly cache add parsed spec { raw: 'gulp-inline-ng2-template@0.0.10',
+69 silly cache add   scope: null,
+69 silly cache add   name: 'gulp-inline-ng2-template',
+69 silly cache add   rawSpec: '0.0.10',
+69 silly cache add   spec: '0.0.10',
+69 silly cache add   type: 'version' }
+70 silly addNamed gulp-inline-ng2-template@0.0.10
+71 verbose addNamed "0.0.10" is a plain semver version for gulp-inline-ng2-template
+72 silly mapToRegistry name gulp-inline-ng2-template
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry uri https://registry.npmjs.org/gulp-inline-ng2-template
+76 verbose addNameVersion registry:https://registry.npmjs.org/gulp-inline-ng2-template not in flight; fetching
+77 silly cache add args [ 'gulp-load-plugins@1.1.0', null ]
+78 verbose cache add spec gulp-load-plugins@1.1.0
+79 silly cache add parsed spec { raw: 'gulp-load-plugins@1.1.0',
+79 silly cache add   scope: null,
+79 silly cache add   name: 'gulp-load-plugins',
+79 silly cache add   rawSpec: '1.1.0',
+79 silly cache add   spec: '1.1.0',
+79 silly cache add   type: 'version' }
+80 silly addNamed gulp-load-plugins@1.1.0
+81 verbose addNamed "1.1.0" is a plain semver version for gulp-load-plugins
+82 silly mapToRegistry name gulp-load-plugins
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry uri https://registry.npmjs.org/gulp-load-plugins
+86 verbose addNameVersion registry:https://registry.npmjs.org/gulp-load-plugins not in flight; fetching
+87 silly cache add args [ 'gulp-rename@1.2.2', null ]
+88 verbose cache add spec gulp-rename@1.2.2
+89 silly cache add parsed spec { raw: 'gulp-rename@1.2.2',
+89 silly cache add   scope: null,
+89 silly cache add   name: 'gulp-rename',
+89 silly cache add   rawSpec: '1.2.2',
+89 silly cache add   spec: '1.2.2',
+89 silly cache add   type: 'version' }
+90 silly addNamed gulp-rename@1.2.2
+91 verbose addNamed "1.2.2" is a plain semver version for gulp-rename
+92 silly mapToRegistry name gulp-rename
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/gulp-rename
+96 verbose addNameVersion registry:https://registry.npmjs.org/gulp-rename not in flight; fetching
+97 silly cache add args [ 'gulp-typescript@2.10.0', null ]
+98 verbose cache add spec gulp-typescript@2.10.0
+99 silly cache add parsed spec { raw: 'gulp-typescript@2.10.0',
+99 silly cache add   scope: null,
+99 silly cache add   name: 'gulp-typescript',
+99 silly cache add   rawSpec: '2.10.0',
+99 silly cache add   spec: '2.10.0',
+99 silly cache add   type: 'version' }
+100 silly addNamed gulp-typescript@2.10.0
+101 verbose addNamed "2.10.0" is a plain semver version for gulp-typescript
+102 silly mapToRegistry name gulp-typescript
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/gulp-typescript
+106 verbose addNameVersion registry:https://registry.npmjs.org/gulp-typescript not in flight; fetching
+107 silly cache add args [ 'gulp-uglify@1.5.1', null ]
+108 verbose cache add spec gulp-uglify@1.5.1
+109 silly cache add parsed spec { raw: 'gulp-uglify@1.5.1',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'gulp-uglify',
+109 silly cache add   rawSpec: '1.5.1',
+109 silly cache add   spec: '1.5.1',
+109 silly cache add   type: 'version' }
+110 silly addNamed gulp-uglify@1.5.1
+111 verbose addNamed "1.5.1" is a plain semver version for gulp-uglify
+112 silly mapToRegistry name gulp-uglify
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry uri https://registry.npmjs.org/gulp-uglify
+116 verbose addNameVersion registry:https://registry.npmjs.org/gulp-uglify not in flight; fetching
+117 silly cache add args [ 'typescript@1.8.0-dev.20151204', null ]
+118 verbose cache add spec typescript@1.8.0-dev.20151204
+119 silly cache add parsed spec { raw: 'typescript@1.8.0-dev.20151204',
+119 silly cache add   scope: null,
+119 silly cache add   name: 'typescript',
+119 silly cache add   rawSpec: '1.8.0-dev.20151204',
+119 silly cache add   spec: '1.8.0-dev.20151204',
+119 silly cache add   type: 'version' }
+120 silly addNamed typescript@1.8.0-dev.20151204
+121 verbose addNamed "1.8.0-dev.20151204" is a plain semver version for typescript
+122 silly mapToRegistry name typescript
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry uri https://registry.npmjs.org/typescript
+126 verbose addNameVersion registry:https://registry.npmjs.org/typescript not in flight; fetching
+127 silly cache add parsed spec { raw: 'gulp@github:gulpjs/gulp#4.0',
+127 silly cache add   scope: null,
+127 silly cache add   name: 'gulp',
+127 silly cache add   rawSpec: 'github:gulpjs/gulp#4.0',
+127 silly cache add   spec: 'github:gulpjs/gulp#4.0',
+127 silly cache add   type: 'hosted',
+127 silly cache add   hosted:
+127 silly cache add    { type: 'github',
+127 silly cache add      ssh: 'git@github.com:gulpjs/gulp.git#4.0',
+127 silly cache add      sshUrl: 'git+ssh://git@github.com/gulpjs/gulp.git#4.0',
+127 silly cache add      httpsUrl: 'git+https://github.com/gulpjs/gulp.git#4.0',
+127 silly cache add      gitUrl: 'git://github.com/gulpjs/gulp.git#4.0',
+127 silly cache add      shortcut: 'github:gulpjs/gulp#4.0',
+127 silly cache add      directUrl: 'https://raw.githubusercontent.com/gulpjs/gulp/4.0/package.json' } }
+128 verbose addRemoteGit caching github:gulpjs/gulp#4.0
+129 verbose addRemoteGit gulpjs/gulp#4.0 is a repository hosted by github
+130 silly tryGitProto attempting to clone git://github.com/gulpjs/gulp.git#4.0
+131 silly tryClone cloning gulpjs/gulp#4.0 via git://github.com/gulpjs/gulp.git#4.0
+132 verbose tryClone git-github-com-gulpjs-gulp-git-3014dfdc not in flight; caching
+133 verbose request uri https://registry.npmjs.org/systemjs
+134 verbose request no auth needed
+135 info attempt registry request try #1 at 1:14:52 PM
+136 verbose request id e5748b1c7603e23e
+137 verbose etag "BL7AVDYJUA86N4ASGC0P10I97"
+138 http request GET https://registry.npmjs.org/systemjs
+139 verbose request uri https://registry.npmjs.org/es6-promise
+140 verbose request no auth needed
+141 info attempt registry request try #1 at 1:14:52 PM
+142 verbose etag "9OVYTBD7CK9J7CBJKRSG225SK"
+143 http request GET https://registry.npmjs.org/es6-promise
+144 verbose request uri https://registry.npmjs.org/angular2
+145 verbose request no auth needed
+146 info attempt registry request try #1 at 1:14:52 PM
+147 verbose etag "7UB200W8Y9V38HZ21BEZ09VD4"
+148 http request GET https://registry.npmjs.org/angular2
+149 verbose request uri https://registry.npmjs.org/rxjs
+150 verbose request no auth needed
+151 info attempt registry request try #1 at 1:14:52 PM
+152 verbose etag "61KCQ7GQRKMI6LGYODHN0W3LV"
+153 http request GET https://registry.npmjs.org/rxjs
+154 verbose request uri https://registry.npmjs.org/es6-shim
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 1:14:52 PM
+157 verbose etag "EY29WQLKTAQGOA5ZEZ8O5O705"
+158 http request GET https://registry.npmjs.org/es6-shim
+159 verbose request uri https://registry.npmjs.org/gulp-inline-ng2-template
+160 verbose request no auth needed
+161 info attempt registry request try #1 at 1:14:52 PM
+162 verbose etag "7XX4TTDFBPS3Y0E0H8717BQ29"
+163 http request GET https://registry.npmjs.org/gulp-inline-ng2-template
+164 verbose request uri https://registry.npmjs.org/gulp-load-plugins
+165 verbose request no auth needed
+166 info attempt registry request try #1 at 1:14:52 PM
+167 verbose etag "6C1R78ERVPLNBZ4SXGFGJTLFY"
+168 http request GET https://registry.npmjs.org/gulp-load-plugins
+169 verbose request uri https://registry.npmjs.org/gulp-rename
+170 verbose request no auth needed
+171 info attempt registry request try #1 at 1:14:52 PM
+172 verbose etag "2IE3683DNVWT4IGNLFKORQ7SR"
+173 http request GET https://registry.npmjs.org/gulp-rename
+174 verbose request uri https://registry.npmjs.org/gulp-typescript
+175 verbose request no auth needed
+176 info attempt registry request try #1 at 1:14:52 PM
+177 verbose etag "836FDZQPX4PD2XZ2UDLAXCQC0"
+178 http request GET https://registry.npmjs.org/gulp-typescript
+179 verbose request uri https://registry.npmjs.org/gulp-uglify
+180 verbose request no auth needed
+181 info attempt registry request try #1 at 1:14:52 PM
+182 verbose etag "PWR5GOBI3YRQWANWGVZTHYV4"
+183 http request GET https://registry.npmjs.org/gulp-uglify
+184 verbose request uri https://registry.npmjs.org/typescript
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 1:14:52 PM
+187 verbose etag "9FY19S96RIU9Y1JPN0QHX5VJM"
+188 http request GET https://registry.npmjs.org/typescript
+189 info git [ 'config', '--get', 'remote.origin.url' ]
+190 warn addRemoteGit gulpjs/gulp#4.0 resetting remote /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc because of error: xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+191 info resetRemote resetting /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc for gulpjs/gulp#4.0
+192 silly gentlyRm /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc is being purged
+193 verbose gentlyRm don't care about contents; nuking /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc
+194 silly vacuum-fs purging /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc
+195 silly vacuum-fs quitting because other entries in /Users/chenhong/.npm/_git-remotes
+196 info git [ 'clone',
+196 info git   '--template=/Users/chenhong/.npm/_git-remotes/_templates',
+196 info git   '--mirror',
+196 info git   'git://github.com/gulpjs/gulp.git',
+196 info git   '/Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc' ]
+197 error git clone --template=/Users/chenhong/.npm/_git-remotes/_templates --mirror git://github.com/gulpjs/gulp.git /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-3014dfdc: xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+198 silly tryHTTPS attempting to clone git+https://github.com/gulpjs/gulp.git#4.0
+199 silly tryClone cloning gulpjs/gulp#4.0 via git+https://github.com/gulpjs/gulp.git#4.0
+200 verbose tryClone https-github-com-gulpjs-gulp-git-4e3bb526 not in flight; caching
+201 info git [ 'config', '--get', 'remote.origin.url' ]
+202 warn addRemoteGit gulpjs/gulp#4.0 resetting remote /Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526 because of error: xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+203 info resetRemote resetting /Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526 for gulpjs/gulp#4.0
+204 silly gentlyRm /Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526 is being purged
+205 verbose gentlyRm don't care about contents; nuking /Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526
+206 silly vacuum-fs purging /Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526
+207 silly vacuum-fs quitting because other entries in /Users/chenhong/.npm/_git-remotes
+208 info git [ 'clone',
+208 info git   '--template=/Users/chenhong/.npm/_git-remotes/_templates',
+208 info git   '--mirror',
+208 info git   'https://github.com/gulpjs/gulp.git',
+208 info git   '/Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526' ]
+209 error git clone --template=/Users/chenhong/.npm/_git-remotes/_templates --mirror https://github.com/gulpjs/gulp.git /Users/chenhong/.npm/_git-remotes/https-github-com-gulpjs-gulp-git-4e3bb526: xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+210 silly trySSH attempting to clone git@github.com:gulpjs/gulp.git#4.0
+211 silly tryClone cloning gulpjs/gulp#4.0 via git@github.com:gulpjs/gulp.git#4.0
+212 verbose tryClone git-github-com-gulpjs-gulp-git-ed33b0aa not in flight; caching
+213 info git [ 'config', '--get', 'remote.origin.url' ]
+214 warn addRemoteGit gulpjs/gulp#4.0 resetting remote /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa because of error: xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+215 info resetRemote resetting /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa for gulpjs/gulp#4.0
+216 silly gentlyRm /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa is being purged
+217 verbose gentlyRm don't care about contents; nuking /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa
+218 silly vacuum-fs purging /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa
+219 silly vacuum-fs quitting because other entries in /Users/chenhong/.npm/_git-remotes
+220 info git [ 'clone',
+220 info git   '--template=/Users/chenhong/.npm/_git-remotes/_templates',
+220 info git   '--mirror',
+220 info git   'git@github.com:gulpjs/gulp.git',
+220 info git   '/Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa' ]
+221 error git clone --template=/Users/chenhong/.npm/_git-remotes/_templates --mirror git@github.com:gulpjs/gulp.git /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa: xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+222 http 304 https://registry.npmjs.org/gulp-inline-ng2-template
+223 silly get cb [ 304,
+223 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+223 silly get     via: '1.1 varnish',
+223 silly get     'cache-control': 'max-age=300',
+223 silly get     etag: '"7XX4TTDFBPS3Y0E0H8717BQ29"',
+223 silly get     age: '43',
+223 silly get     connection: 'keep-alive',
+223 silly get     'x-served-by': 'cache-sin6927-SIN',
+223 silly get     'x-cache': 'HIT',
+223 silly get     'x-cache-hits': '1',
+223 silly get     'x-timer': 'S1464844493.174321,VS0,VE0',
+223 silly get     vary: 'Accept-Encoding' } ]
+224 verbose etag https://registry.npmjs.org/gulp-inline-ng2-template from cache
+225 verbose get saving gulp-inline-ng2-template to /Users/chenhong/.npm/registry.npmjs.org/gulp-inline-ng2-template/.cache.json
+226 http 304 https://registry.npmjs.org/es6-promise
+227 silly get cb [ 304,
+227 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+227 silly get     via: '1.1 varnish',
+227 silly get     'cache-control': 'max-age=300',
+227 silly get     etag: '"9OVYTBD7CK9J7CBJKRSG225SK"',
+227 silly get     age: '241',
+227 silly get     connection: 'keep-alive',
+227 silly get     'x-served-by': 'cache-sin6920-SIN',
+227 silly get     'x-cache': 'HIT',
+227 silly get     'x-cache-hits': '6',
+227 silly get     'x-timer': 'S1464844493.173804,VS0,VE0',
+227 silly get     vary: 'Accept-Encoding' } ]
+228 verbose etag https://registry.npmjs.org/es6-promise from cache
+229 verbose get saving es6-promise to /Users/chenhong/.npm/registry.npmjs.org/es6-promise/.cache.json
+230 http 304 https://registry.npmjs.org/systemjs
+231 silly get cb [ 304,
+231 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+231 silly get     via: '1.1 varnish',
+231 silly get     'cache-control': 'max-age=300',
+231 silly get     etag: '"BL7AVDYJUA86N4ASGC0P10I97"',
+231 silly get     age: '274',
+231 silly get     connection: 'keep-alive',
+231 silly get     'x-served-by': 'cache-sin6923-SIN',
+231 silly get     'x-cache': 'HIT',
+231 silly get     'x-cache-hits': '2',
+231 silly get     'x-timer': 'S1464844493.172619,VS0,VE0',
+231 silly get     vary: 'Accept-Encoding' } ]
+232 verbose etag https://registry.npmjs.org/systemjs from cache
+233 verbose get saving systemjs to /Users/chenhong/.npm/registry.npmjs.org/systemjs/.cache.json
+234 silly addNameRange number 2 { name: 'es6-promise', range: '>=3.0.2 <4.0.0', hasData: true }
+235 silly addNameRange versions [ 'es6-promise',
+235 silly addNameRange   [ '0.1.0',
+235 silly addNameRange     '0.1.1',
+235 silly addNameRange     '0.1.2',
+235 silly addNameRange     '1.0.0',
+235 silly addNameRange     '2.0.0',
+235 silly addNameRange     '2.0.1',
+235 silly addNameRange     '2.1.0',
+235 silly addNameRange     '2.1.1',
+235 silly addNameRange     '2.2.0',
+235 silly addNameRange     '2.3.0',
+235 silly addNameRange     '3.0.0',
+235 silly addNameRange     '3.0.1',
+235 silly addNameRange     '3.0.2',
+235 silly addNameRange     '3.1.2',
+235 silly addNameRange     '3.2.1' ] ]
+236 silly addNamed es6-promise@3.2.1
+237 verbose addNamed "3.2.1" is a plain semver version for es6-promise
+238 silly cache afterAdd es6-promise@3.2.1
+239 verbose afterAdd /Users/chenhong/.npm/es6-promise/3.2.1/package/package.json not in flight; writing
+240 silly cache afterAdd systemjs@0.19.6
+241 verbose afterAdd /Users/chenhong/.npm/systemjs/0.19.6/package/package.json not in flight; writing
+242 silly cache afterAdd gulp-inline-ng2-template@0.0.10
+243 verbose afterAdd /Users/chenhong/.npm/gulp-inline-ng2-template/0.0.10/package/package.json not in flight; writing
+244 http 304 https://registry.npmjs.org/gulp-load-plugins
+245 silly get cb [ 304,
+245 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+245 silly get     via: '1.1 varnish',
+245 silly get     'cache-control': 'max-age=300',
+245 silly get     etag: '"6C1R78ERVPLNBZ4SXGFGJTLFY"',
+245 silly get     age: '43',
+245 silly get     connection: 'keep-alive',
+245 silly get     'x-served-by': 'cache-sin6922-SIN',
+245 silly get     'x-cache': 'HIT',
+245 silly get     'x-cache-hits': '2',
+245 silly get     'x-timer': 'S1464844493.195976,VS0,VE0',
+245 silly get     vary: 'Accept-Encoding' } ]
+246 verbose etag https://registry.npmjs.org/gulp-load-plugins from cache
+247 verbose get saving gulp-load-plugins to /Users/chenhong/.npm/registry.npmjs.org/gulp-load-plugins/.cache.json
+248 http 304 https://registry.npmjs.org/typescript
+249 silly get cb [ 304,
+249 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+249 silly get     via: '1.1 varnish',
+249 silly get     'cache-control': 'max-age=300',
+249 silly get     etag: '"9FY19S96RIU9Y1JPN0QHX5VJM"',
+249 silly get     age: '209',
+249 silly get     connection: 'keep-alive',
+249 silly get     'x-served-by': 'cache-sin6921-SIN',
+249 silly get     'x-cache': 'HIT',
+249 silly get     'x-cache-hits': '6',
+249 silly get     'x-timer': 'S1464844493.192814,VS0,VE0',
+249 silly get     vary: 'Accept-Encoding' } ]
+250 verbose etag https://registry.npmjs.org/typescript from cache
+251 verbose get saving typescript to /Users/chenhong/.npm/registry.npmjs.org/typescript/.cache.json
+252 http 304 https://registry.npmjs.org/es6-shim
+253 silly get cb [ 304,
+253 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+253 silly get     via: '1.1 varnish',
+253 silly get     'cache-control': 'max-age=300',
+253 silly get     etag: '"EY29WQLKTAQGOA5ZEZ8O5O705"',
+253 silly get     age: '43',
+253 silly get     connection: 'keep-alive',
+253 silly get     'x-served-by': 'cache-sin6920-SIN',
+253 silly get     'x-cache': 'HIT',
+253 silly get     'x-cache-hits': '2',
+253 silly get     'x-timer': 'S1464844493.196313,VS0,VE0',
+253 silly get     vary: 'Accept-Encoding' } ]
+254 verbose etag https://registry.npmjs.org/es6-shim from cache
+255 verbose get saving es6-shim to /Users/chenhong/.npm/registry.npmjs.org/es6-shim/.cache.json
+256 http 304 https://registry.npmjs.org/gulp-uglify
+257 silly get cb [ 304,
+257 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+257 silly get     via: '1.1 varnish',
+257 silly get     'cache-control': 'max-age=300',
+257 silly get     etag: '"PWR5GOBI3YRQWANWGVZTHYV4"',
+257 silly get     age: '213',
+257 silly get     connection: 'keep-alive',
+257 silly get     'x-served-by': 'cache-sin6924-SIN',
+257 silly get     'x-cache': 'HIT',
+257 silly get     'x-cache-hits': '1',
+257 silly get     'x-timer': 'S1464844493.194264,VS0,VE0',
+257 silly get     vary: 'Accept-Encoding' } ]
+258 verbose etag https://registry.npmjs.org/gulp-uglify from cache
+259 verbose get saving gulp-uglify to /Users/chenhong/.npm/registry.npmjs.org/gulp-uglify/.cache.json
+260 http 304 https://registry.npmjs.org/gulp-typescript
+261 silly get cb [ 304,
+261 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+261 silly get     via: '1.1 varnish',
+261 silly get     'cache-control': 'max-age=300',
+261 silly get     etag: '"836FDZQPX4PD2XZ2UDLAXCQC0"',
+261 silly get     age: '43',
+261 silly get     connection: 'keep-alive',
+261 silly get     'x-served-by': 'cache-sin6925-SIN',
+261 silly get     'x-cache': 'HIT',
+261 silly get     'x-cache-hits': '3',
+261 silly get     'x-timer': 'S1464844493.196489,VS0,VE0',
+261 silly get     vary: 'Accept-Encoding' } ]
+262 verbose etag https://registry.npmjs.org/gulp-typescript from cache
+263 verbose get saving gulp-typescript to /Users/chenhong/.npm/registry.npmjs.org/gulp-typescript/.cache.json
+264 http 304 https://registry.npmjs.org/angular2
+265 silly get cb [ 304,
+265 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+265 silly get     via: '1.1 varnish',
+265 silly get     'cache-control': 'max-age=300',
+265 silly get     etag: '"7UB200W8Y9V38HZ21BEZ09VD4"',
+265 silly get     age: '201',
+265 silly get     connection: 'keep-alive',
+265 silly get     'x-served-by': 'cache-sin6920-SIN',
+265 silly get     'x-cache': 'HIT',
+265 silly get     'x-cache-hits': '1',
+265 silly get     'x-timer': 'S1464844493.193804,VS0,VE0',
+265 silly get     vary: 'Accept-Encoding' } ]
+266 verbose etag https://registry.npmjs.org/angular2 from cache
+267 verbose get saving angular2 to /Users/chenhong/.npm/registry.npmjs.org/angular2/.cache.json
+268 http 304 https://registry.npmjs.org/gulp-rename
+269 silly get cb [ 304,
+269 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+269 silly get     via: '1.1 varnish',
+269 silly get     'cache-control': 'max-age=300',
+269 silly get     etag: '"2IE3683DNVWT4IGNLFKORQ7SR"',
+269 silly get     age: '30',
+269 silly get     connection: 'keep-alive',
+269 silly get     'x-served-by': 'cache-sin6923-SIN',
+269 silly get     'x-cache': 'HIT',
+269 silly get     'x-cache-hits': '2',
+269 silly get     'x-timer': 'S1464844493.193046,VS0,VE0',
+269 silly get     vary: 'Accept-Encoding' } ]
+270 verbose etag https://registry.npmjs.org/gulp-rename from cache
+271 verbose get saving gulp-rename to /Users/chenhong/.npm/registry.npmjs.org/gulp-rename/.cache.json
+272 http 304 https://registry.npmjs.org/rxjs
+273 silly get cb [ 304,
+273 silly get   { date: 'Thu, 02 Jun 2016 05:14:53 GMT',
+273 silly get     via: '1.1 varnish',
+273 silly get     'cache-control': 'max-age=300',
+273 silly get     etag: '"61KCQ7GQRKMI6LGYODHN0W3LV"',
+273 silly get     age: '43',
+273 silly get     connection: 'keep-alive',
+273 silly get     'x-served-by': 'cache-sin6920-SIN',
+273 silly get     'x-cache': 'HIT',
+273 silly get     'x-cache-hits': '8',
+273 silly get     'x-timer': 'S1464844493.194760,VS0,VE0',
+273 silly get     vary: 'Accept-Encoding' } ]
+274 verbose etag https://registry.npmjs.org/rxjs from cache
+275 verbose get saving rxjs to /Users/chenhong/.npm/registry.npmjs.org/rxjs/.cache.json
+276 verbose afterAdd /Users/chenhong/.npm/gulp-inline-ng2-template/0.0.10/package/package.json written
+277 verbose afterAdd /Users/chenhong/.npm/systemjs/0.19.6/package/package.json written
+278 verbose afterAdd /Users/chenhong/.npm/es6-promise/3.2.1/package/package.json written
+279 silly addNameRange number 2 { name: 'es6-shim', range: '>=0.33.3 <0.34.0', hasData: true }
+280 silly addNameRange versions [ 'es6-shim',
+280 silly addNameRange   [ '0.1.0',
+280 silly addNameRange     '0.2.0',
+280 silly addNameRange     '0.2.1',
+280 silly addNameRange     '0.3.0',
+280 silly addNameRange     '0.3.1',
+280 silly addNameRange     '0.4.0',
+280 silly addNameRange     '0.4.1',
+280 silly addNameRange     '0.5.0',
+280 silly addNameRange     '0.5.1',
+280 silly addNameRange     '0.5.2',
+280 silly addNameRange     '0.5.3',
+280 silly addNameRange     '0.6.0',
+280 silly addNameRange     '0.7.0',
+280 silly addNameRange     '0.8.0',
+280 silly addNameRange     '0.9.0',
+280 silly addNameRange     '0.9.1',
+280 silly addNameRange     '0.9.2',
+280 silly addNameRange     '0.9.3',
+280 silly addNameRange     '0.10.0',
+280 silly addNameRange     '0.10.1',
+280 silly addNameRange     '0.11.0',
+280 silly addNameRange     '0.11.1',
+280 silly addNameRange     '0.12.0',
+280 silly addNameRange     '0.13.0',
+280 silly addNameRange     '0.14.0',
+280 silly addNameRange     '0.15.0',
+280 silly addNameRange     '0.15.1',
+280 silly addNameRange     '0.16.0',
+280 silly addNameRange     '0.17.0',
+280 silly addNameRange     '0.18.0',
+280 silly addNameRange     '0.19.0',
+280 silly addNameRange     '0.19.1',
+280 silly addNameRange     '0.19.2',
+280 silly addNameRange     '0.20.0',
+280 silly addNameRange     '0.20.1',
+280 silly addNameRange     '0.20.2',
+280 silly addNameRange     '0.20.3',
+280 silly addNameRange     '0.20.4',
+280 silly addNameRange     '0.21.0',
+280 silly addNameRange     '0.21.1',
+280 silly addNameRange     '0.22.0',
+280 silly addNameRange     '0.22.1',
+280 silly addNameRange     '0.22.2',
+280 silly addNameRange     '0.23.0',
+280 silly addNameRange     '0.24.0',
+280 silly addNameRange     '0.25.0',
+280 silly addNameRange     '0.25.1',
+280 silly addNameRange     '0.25.2',
+280 silly addNameRange     '0.25.3',
+280 silly addNameRange     '0.26.0',
+280 silly addNameRange     '0.26.1',
+280 silly addNameRange     '0.27.1',
+280 silly addNameRange     '0.28.1',
+280 silly addNameRange     '0.29.0',
+280 silly addNameRange     '0.30.0',
+280 silly addNameRange     '0.31.0',
+280 silly addNameRange     '0.31.1',
+280 silly addNameRange     '0.31.2',
+280 silly addNameRange     '0.31.3',
+280 silly addNameRange     '0.32.0',
+280 silly addNameRange     '0.32.1',
+280 silly addNameRange     '0.32.2',
+280 silly addNameRange     '0.33.0',
+280 silly addNameRange     '0.33.1',
+280 silly addNameRange     '0.33.2',
+280 silly addNameRange     '0.33.3',
+280 silly addNameRange     '0.33.4',
+280 silly addNameRange     '0.33.5',
+280 silly addNameRange     '0.33.6',
+280 silly addNameRange     '0.33.7',
+280 silly addNameRange     '0.33.8',
+280 silly addNameRange     '0.33.9',
+280 silly addNameRange     '0.33.10',
+280 silly addNameRange     '0.33.11',
+280 silly addNameRange     '0.33.12',
+280 silly addNameRange     '0.33.13',
+280 silly addNameRange     '0.34.0',
+280 silly addNameRange     '0.34.1',
+280 silly addNameRange     '0.34.2',
+280 silly addNameRange     '0.34.3',
+280 silly addNameRange     '0.34.4',
+280 silly addNameRange     '0.35.0',
+280 silly addNameRange     '0.35.1' ] ]
+281 silly addNamed es6-shim@0.33.13
+282 verbose addNamed "0.33.13" is a plain semver version for es6-shim
+283 silly cache afterAdd gulp-load-plugins@1.1.0
+284 verbose afterAdd /Users/chenhong/.npm/gulp-load-plugins/1.1.0/package/package.json not in flight; writing
+285 silly cache afterAdd gulp-uglify@1.5.1
+286 verbose afterAdd /Users/chenhong/.npm/gulp-uglify/1.5.1/package/package.json not in flight; writing
+287 silly cache afterAdd es6-shim@0.33.13
+288 verbose afterAdd /Users/chenhong/.npm/es6-shim/0.33.13/package/package.json not in flight; writing
+289 silly cache afterAdd angular2@2.0.0-beta.17
+290 verbose afterAdd /Users/chenhong/.npm/angular2/2.0.0-beta.17/package/package.json not in flight; writing
+291 silly cache afterAdd gulp-rename@1.2.2
+292 verbose afterAdd /Users/chenhong/.npm/gulp-rename/1.2.2/package/package.json not in flight; writing
+293 silly cache afterAdd typescript@1.8.0-dev.20151204
+294 verbose afterAdd /Users/chenhong/.npm/typescript/1.8.0-dev.20151204/package/package.json not in flight; writing
+295 silly cache afterAdd rxjs@5.0.0-beta.0
+296 verbose afterAdd /Users/chenhong/.npm/rxjs/5.0.0-beta.0/package/package.json not in flight; writing
+297 silly cache afterAdd gulp-typescript@2.10.0
+298 verbose afterAdd /Users/chenhong/.npm/gulp-typescript/2.10.0/package/package.json not in flight; writing
+299 verbose afterAdd /Users/chenhong/.npm/gulp-load-plugins/1.1.0/package/package.json written
+300 verbose afterAdd /Users/chenhong/.npm/gulp-uglify/1.5.1/package/package.json written
+301 verbose afterAdd /Users/chenhong/.npm/angular2/2.0.0-beta.17/package/package.json written
+302 verbose afterAdd /Users/chenhong/.npm/typescript/1.8.0-dev.20151204/package/package.json written
+303 verbose afterAdd /Users/chenhong/.npm/gulp-rename/1.2.2/package/package.json written
+304 verbose afterAdd /Users/chenhong/.npm/es6-shim/0.33.13/package/package.json written
+305 verbose afterAdd /Users/chenhong/.npm/gulp-typescript/2.10.0/package/package.json written
+306 verbose afterAdd /Users/chenhong/.npm/rxjs/5.0.0-beta.0/package/package.json written
+307 verbose stack Error: Command failed: git clone --template=/Users/chenhong/.npm/_git-remotes/_templates --mirror git@github.com:gulpjs/gulp.git /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa
+307 verbose stack xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+307 verbose stack
+307 verbose stack     at ChildProcess.exithandler (child_process.js:751:12)
+307 verbose stack     at ChildProcess.emit (events.js:110:17)
+307 verbose stack     at maybeClose (child_process.js:1015:16)
+307 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+308 verbose cwd /Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/src/main/frontend
+309 error Darwin 15.4.0
+310 error argv "/Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/target/node-installation-dir/node/node" "/Users/chenhong/Documents/mydev/self/gstone/gstone/source/gstone-angular/target/node-installation-dir/node/node_modules/npm/bin/npm-cli.js" "install"
+311 error node v0.12.4
+312 error npm  v2.13.0
+313 error code 1
+314 error Command failed: git clone --template=/Users/chenhong/.npm/_git-remotes/_templates --mirror git@github.com:gulpjs/gulp.git /Users/chenhong/.npm/_git-remotes/git-github-com-gulpjs-gulp-git-ed33b0aa
+314 error xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+315 error If you need help, you may report this error at:
+315 error     <https://github.com/npm/npm/issues>
+316 verbose exit [ 1, true ]
